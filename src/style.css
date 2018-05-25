@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(226, 213, 213);
+}
+
+/* título */
+.title {
+  color: #fff;
+  font-size: 45px;
+  font-style: sans-serif;
+  text-shadow: 1px 1px 2px black, 0 0 1em rgba(255, 0, 128, 0.671), 0 0 0.2em rgb(242, 14, 124);
+  text-align: center;
+  text-decoration:none;
+}
+  
+  /* Icono */
+  .icon {
+    display: inline-block;
+  }
+  
+  /* tamaño de icono */
+  .iconSize {
+    width: 75px;
+    height: 75px;
+  }
+
+  /* Saludo con nombre */
+#welcome {
+  float: right;
+  color: rgba(129, 64, 114, 0.507);
+  font-family: sans-serif;
+  font-size: 25px;
+  }

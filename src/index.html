@@ -8,20 +8,35 @@
   </head>
   <body>
     <header>
-      <h1>CIFRADO CESAR</h1>
-      <hr>
+      <center><h1><a class="title" href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank" title="Cifrado César">HISTÓRICO CIFRADO CÉSAR</a></h1></center>
+      <div class="icon"><img class="iconSize" src="https://lh4.ggpht.com/7Nf-XlwQCEzjpyfhfIlOKb2gmzCIPiw-GvHck3zUJ-Xbipvj7sIHFmtbZ_OXasEJVZQ=w300" alt="Icono del Emperador Julio Cesar" title="Emperrador Julio Cesar"></div>
       <p id="welcome">¡Bienvenido(a)!</p>
+      <nav>
+        <ul>
+          <li><a href="">¿Qué es?</a></li>
+          <li><a href="">Cifrar</a></li>
+          <li><a href="">Descifrar</a></li>
+          <li><a href="">Favoritos</a></li>
+        </ul>
+      </nav>
     </header>  
     <section>
-      <label for="cipher">Ingresar texto:</label>
-      <input id="cipher" type="text">
-      <button type="submit">CIFRAR</button>
-      <p id="encrypted"></p>
-      <br><br>
-      <label for="decipher">Ingresar texto:</label>
-      <input id="decipher" type="text">
-      <button type="submit">DESCIFRAR</button>
-      <p id="decrypted"></p>
+      <img src="https://tutorialesenlinea.es/uploads/posts/2015-04/1430401744_856px-caesar3.png" alt="Diagrama del método cifrado cesar" title="Método Cifrado Cesar">
+      <h2>Herramienta para cifrar y descifrar textos con el método de cifrado César.</h2> 
+      <div>
+        <label for="displace">Número de desplazamiento:</label>
+        <input id="displace" type="text" placeholder="10" maxlength="2">
+        <br><br>
+        <label for="cipher">Ingresar texto:</label>
+        <input id="cipher" type="text" placeholder="¡Hola, escribe aquí!">
+        <button type="submit">CIFRAR</button>
+        <p id="encrypted"></p>
+        <br><br>
+        <label for="decipher">Ingresar texto:</label>
+        <input id="decipher" type="text" placeholder="¡Hola, escribe aquí!">
+        <button type="submit">DESCIFRAR</button>
+        <p id="decrypted"></p>
+      </div>
     </section>
     <div id="root"></div>
     <script src="cipher.js"></script>
