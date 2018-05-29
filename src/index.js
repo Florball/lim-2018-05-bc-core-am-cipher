@@ -1,5 +1,5 @@
 // Pide nombre a usuario y devuelve el nombre con la inicial mayuscula.
-let name = prompt('¡Hola! \n ¿Cuál es tu nombre?'); 
+let name = 
 name = name.charAt(0).toUpperCase() + name.slice(1);
 
 // Muestra un saludo en pantalla con el nombre del usuario.
