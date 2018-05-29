@@ -7,7 +7,7 @@ body {
 }
 
 /* título */
-.title {
+h1 {
   color: #fff;
   font-size: 45px;
   font-style: sans-serif;
@@ -28,3 +28,13 @@ li {
 }
 
 /* Imágen descriptiva de Cifrado Cesar */
+.encryptionImage {
+  margin: auto;
+  width: 100%;
+}
+img {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
