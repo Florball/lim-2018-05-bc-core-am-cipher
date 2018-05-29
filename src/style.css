@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  background-color: rgb(226, 213, 213);
+  background-color: #000;
 }
 
 /* título */
@@ -14,11 +14,8 @@ body {
   text-shadow: 1px 1px 2px black, 0 0 1em rgba(255, 0, 128, 0.671), 0 0 0.2em rgb(242, 14, 124);
   text-align: center;
   text-decoration:none;
-  background-color: bisque;
   width: 50%;
   height: 70%;
-  display: inline-block;
-  right: 50px;
   padding: 20px;
 }
 
@@ -29,3 +26,5 @@ ul {
 li {
   float: left;
 }
+
+/* Imágen descriptiva de Cifrado Cesar */
