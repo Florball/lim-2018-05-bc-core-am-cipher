@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Título y barra de navegacion -->
     <header>
       <center><h1>Ocultando tu mensaje con el método Cifrado César</h1></center>
-      <nav>
+      <nav class="bar">
         <ul>
           <li><a href="">¿Qué es Cifrado César?</a></li>
           <li><a href="">Cifrar</a></li>
@@ -22,17 +23,24 @@
       <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank"><img src="https://tutorialesenlinea.es/uploads/posts/2015-04/1430401744_856px-caesar3.png" alt="Diagrama del método cifrado cesar" title="Método Cifrado Cesar"></a>
       <h2>Herramienta para cifrar y descifrar textos con el método de cifrado César.</h2> 
       <div>
+        <!-- Desplazamiento -->
         <label for="displace">Número de desplazamiento:</label>
         <input id="displace" type="text" placeholder="10" maxlength="2">
         <br><br>
+
+        <!-- Texto para encriptar -->
         <label for="cipher">Ingresar texto:</label>
         <input id="cipher" type="text" placeholder="¡Hola, escribe aquí!">
-        <button type="submit">CIFRAR</button>
+        <button>CIFRAR</button>
+        <!-- Texto encriptado -->
         <p id="encrypted"></p>
         <br><br>
+
+        <!-- Texto para desencriptar -->
         <label for="decipher">Ingresar texto:</label>
         <input id="decipher" type="text" placeholder="¡Hola, escribe aquí!">
-        <button type="submit">DESCIFRAR</button>
+        <button>DESCIFRAR</button>
+        <!-- Texto desencriptado -->
         <p id="decrypted"></p>
       </div>
     </section>
