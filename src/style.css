@@ -37,7 +37,7 @@ img {
   display: block;
 }
 
-/* Usando media query (medidas recomendadas) */
+/* Usando media query (medidas recomendadas) para responsive en moviles y tablets */
 @media (min-width:320px) and (max-width:992px) {
   li a {
     background-color: red;

@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title>Oculta tu mensaje!</title>
-    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/692/PNG/512/seo-social-web-network-internet_95_icon-icons.com_61522.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Título y barra de navegacion -->
-    <header>
-      <center><h1>Ocultando tu mensaje con el método Cifrado César</h1></center>
-      <nav class="bar">
-        <ul>
-          <li><a href="">¿Qué es Cifrado César?</a></li>
-          <li><a href="">Cifrar</a></li>
-          <li><a href="">Descifrar</a></li>
-          <li><a href="">Favoritos</a></li>
-        </ul>
-      </nav>
-    </header>  
-    <section>
-      <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank"><img src="https://tutorialesenlinea.es/uploads/posts/2015-04/1430401744_856px-caesar3.png" alt="Diagrama del método cifrado cesar" title="Método Cifrado Cesar"></a>
-      <h2>Herramienta para cifrar y descifrar textos con el método de cifrado César.</h2> 
-      <div>
-        <!-- Desplazamiento -->
-        <label for="displace">Número de desplazamiento:</label>
-        <input id="displace" type="text" placeholder="10" maxlength="2">
-        <br><br>
 
-        <!-- Texto para encriptar -->
-        <label for="cipher">Ingresar texto:</label>
-        <input id="cipher" type="text" placeholder="¡Hola, escribe aquí!">
-        <button>CIFRAR</button>
-        <!-- Texto encriptado -->
-        <p id="encrypted"></p>
-        <br><br>
+<head>
+  <meta charset="utf-8">
+  <title>Oculta tu mensaje!</title>
+  <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/692/PNG/512/seo-social-web-network-internet_95_icon-icons.com_61522.png"
+    type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <!-- Texto para desencriptar -->
-        <label for="decipher">Ingresar texto:</label>
-        <input id="decipher" type="text" placeholder="¡Hola, escribe aquí!">
-        <button>DESCIFRAR</button>
-        <!-- Texto desencriptado -->
-        <p id="decrypted"></p>
-      </div>
-    </section>
-    <div id="root"></div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+<body>
+  <!-- Título y barra de navegacion -->
+  <header>
+    <center>
+      <h1>Ocultando tu mensaje con el método Cifrado César</h1>
+    </center>
+    <nav class="bar">
+      <ul>
+        <li>
+          <a href="">¿Qué es Cifrado César?</a>
+        </li>
+        <li>
+          <a href="">Cifrar</a>
+        </li>
+        <li>
+          <a href="">Descifrar</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank">
+      <img src="https://tutorialesenlinea.es/uploads/posts/2015-04/1430401744_856px-caesar3.png" alt="Diagrama del método cifrado cesar"
+        title="Método Cifrado Cesar">
+    </a>
+    <h2>Herramienta para cifrar y descifrar textos con el método de cifrado César.</h2>
+    <form>
+      <!-- Desplazamiento -->
+      <label for="displace">Número de desplazamiento:</label>
+      <input id="displace" type="number" placeholder="10" maxlength="3" min="1">
+      <br>
+      <br>
+
+      <!-- Texto para encriptar -->
+      <label for="cipher">Ingresar texto:</label>
+      <input id="cipher" type="text" placeholder="¡Hola, escribe aquí!">
+      <button id="buttonEncode" type="button">CIFRAR</button>
+      <!-- Texto encriptado -->
+      <p id="encryptedText"></p>
+      <br>
+      <br>
+
+      <!-- Texto para desencriptar -->
+      <label for="decipher">Ingresar texto:</label>
+      <input id="decipher" type="text" placeholder="¡Hola, escribe aquí!">
+      <button id="buttonDecode" type="button">DESCIFRAR</button>
+      <!-- Texto desencriptado -->
+      <p id="decryptedText"></p>
+    </form>
+  </section>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
