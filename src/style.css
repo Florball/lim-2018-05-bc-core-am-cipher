@@ -1,44 +1,58 @@
+/* Margen y relleno universal */
 * {
   margin: 0;
   padding: 0;
 }
-/* body { 
-  background-color: #000;
- }  */
+body { 
+  background-color: #1e1923;
+ }
 
 /* título */
 h1 {
   color: #fff;
   font-size: 300%;
-  font-style: sans-serif;
+  font-family: 'Jua', sans-serif;
   text-shadow: 1px 1px 2px black, 0 0 1em rgba(255, 0, 128, 0.671), 0 0 0.2em rgb(242, 14, 124);
   text-align: center;
   text-decoration:none;
-  padding: 20px;
-  margin: auto;
+  padding: 30px;
+  margin-top: 3%;
   display: block;
   height: auto;
+  letter-spacing: .75px;
 }
 
-  /* Barra de navegacion */
-ul {
-  list-style: none; /* Eliminando los discos-puntos de los li */
-  padding: 14px;
+/* Barra de navegacion */
+.navigationBar {
+  margin: 0px, 0px;
+  /* background-color: #040404; */
+  background-color: rgba(0, 0, 0, 0.74);
+  top: 0;
 }
-li {
-  display: inline; 
+.pressbutton {
+  font-family: 'Montserrat', sans-serif;
+  color: #e8bbbb;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-left: 11%;
+  background-color: transparent;
+  padding: 1.5% 1%;
+  border: none;
+  transition: background-color .2s;
+  /* display: inline-block; */
 }
-
-a {
-  text-decoration: none; /* Eliminando el diseño por defecto del anclaje a un archivo externo */
+.pressbutton:hover {
+  color: #fff;
+  background-color: #3f353596;
 }
 
 /* Imágen descriptiva de Cifrado Cesar */
 img {
-  width: 70%;
+  width: 55%;
   height: auto;
   margin: auto;
   display: block;
+  padding: 5%;
 }
 
 /* Usando media query (medidas recomendadas) para responsive en moviles y tablets */

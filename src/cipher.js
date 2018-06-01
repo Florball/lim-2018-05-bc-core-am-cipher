@@ -7,8 +7,10 @@ window.cipher = {
       if (position >= 65 && position <= 90) {
         let value = (position - 65 + offset) % 26 + 65;
         encryption += String.fromCharCode(value);
-      } 
-     }
+      } else if (position == 32) {
+        encryption += " ";
+      }
+    }
     return (encryption);
   },
   decode: (offset, string) => {
@@ -18,6 +20,8 @@ window.cipher = {
       if (position >= 65 && position <= 90) {
         let value = (position - 90 - offset) % 26 + 90;
         decrypted += String.fromCharCode(value);
+      } else if (position == 32) {
+        decrypted += " ";
       }
     }
     return (decrypted);
