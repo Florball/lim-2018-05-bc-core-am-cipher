@@ -7,8 +7,8 @@ const buttonDecode = document.getElementById('buttonDecode'); // Boton para desc
 const decryptedText = document.getElementById('decryptedText'); // Texto descifrado.
 
 buttonEncode.addEventListener('click', ()=>{
-  encryptedText.innerHTML = cipher.encode(parseInt(offset.value), cipherString.value);
+  encryptedText.innerHTML = cipher.encode(parseInt(offset.value), cipherString.value.toUpperCase());
 });
 buttonDecode.addEventListener('click', ()=>{
-  decryptedText.innerHTML = cipher.decode(parseInt(offset.value), decipherString.value);
+  decryptedText.innerHTML = cipher.decode(parseInt(offset.value), decipherString.value.toUpperCase());
 });

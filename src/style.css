@@ -23,9 +23,13 @@ h1 {
   /* Barra de navegacion */
 ul {
   list-style: none; /* Eliminando los discos-puntos de los li */
+  padding: 14px;
 }
-li a {
-  float: left;
+li {
+  display: inline; 
+}
+
+a {
   text-decoration: none; /* Eliminando el diseño por defecto del anclaje a un archivo externo */
 }
 
@@ -38,11 +42,10 @@ img {
 }
 
 /* Usando media query (medidas recomendadas) para responsive en moviles y tablets */
-@media (min-width:320px) and (max-width:992px) {
+@media (max-width:768px) {
   li a {
     background-color: red;
     color: yellow;
     font-size: 40px;
   }
-  
 }
