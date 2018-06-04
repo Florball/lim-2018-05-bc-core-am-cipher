@@ -3,20 +3,23 @@
   margin: 0;
   padding: 0;
 }
+
+
 body { 
-  background-color: #1e1923;
+  background: #231d1d;
  }
 
 /* título */
 h1 {
   color: #fff;
   font-size: 300%;
-  font-family: 'Jua', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  /* font-weight: normal; para quitarle el efecto negrita al texto */
   text-shadow: 1px 1px 2px black, 0 0 1em rgba(255, 0, 128, 0.671), 0 0 0.2em rgb(242, 14, 124);
   text-align: center;
-  text-decoration:none;
   padding: 30px;
   margin-top: 3%;
+  margin-bottom: 1%;
   display: block;
   height: auto;
   letter-spacing: .75px;
@@ -24,35 +27,105 @@ h1 {
 
 /* Barra de navegacion */
 .navigationBar {
-  margin: 0px, 0px;
-  /* background-color: #040404; */
-  background-color: rgba(0, 0, 0, 0.74);
-  top: 0;
+  background-color: rgba(248, 8, 128, 0.671);
+  margin-bottom: 3%;
 }
 .pressbutton {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
   color: #e8bbbb;
-  font-size: 20px;
-  letter-spacing: 1px;
-  margin-left: 11%;
+  letter-spacing: 2px;
+  margin-left: 7%;
   background-color: transparent;
-  padding: 1.5% 1%;
+  padding: 1.5% 2%;
   border: none;
   transition: background-color .2s;
-  /* display: inline-block; */
 }
 .pressbutton:hover {
   color: #fff;
   background-color: #3f353596;
 }
 
+/* Parrafo de que es el cifrado Cesar */
+.textCipherCesar {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  color: #e8bbbb;
+  letter-spacing: 1.5px;
+  margin: 2% 6%;
+}
+
 /* Imágen descriptiva de Cifrado Cesar */
 img {
-  width: 55%;
+  width: 35%;
   height: auto;
-  margin: auto;
+  margin: auto; /* Para centrar la imagen */
   display: block;
+  box-shadow: 7px 7px rgba(248, 8, 128, 0.76);
+  border-radius: 8px;
+}
+
+/* Cuadro de difrado */
+.moduleCipher {
+background-color: rgba(248, 8, 128, 0.829);
+width: 50%;
+border: 1px solid rgba(248, 8, 128, 0.829);
+border-radius: 15px;
+padding: 5%;
+margin: auto;
+}
+
+/* Subtitulos para indicar el ingreso de desplazamiento y texto para cifrar y descifrar */
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  color: #fff;
+  letter-spacing: 1.5px;
+  margin: 2.5% 4%;
+}
+
+/* Boton para ingresar numero de desplazamiento */
+/* #displace {
+  
+} */
+
+/* Etiquetas */
+label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 1.5px;
+  margin: 2% 4%;
+}
+
+/* Texto cifrado */
+#encryptedText {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #02eaab;
+  letter-spacing: 1.5px;
+  margin-top: 6%;
+  text-align: center;
+}
+
+/* Cuadro de descifrado */
+.moduleDecipher {
+  background-color: rgba(248, 8, 128, 0.829);
+  width: 50%;
+  border: 1px solid rgba(248, 8, 128, 0.829);
+  border-radius: 15px;
   padding: 5%;
+  margin: auto;
+  }
+
+  /* Texto descifrado */
+ #decryptedText {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #02eaab;
+  letter-spacing: 1.5px;
+  margin-top: 6%;
+  text-align: center;
 }
 
 /* Usando media query (medidas recomendadas) para responsive en moviles y tablets */

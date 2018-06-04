@@ -7,7 +7,7 @@
   <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/692/PNG/512/seo-social-web-network-internet_95_icon-icons.com_61522.png"
     type="image/x-icon">
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Jua|Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family= Montserrat: 400,500 " rel="stylesheet">
 </head>
 
 <body>
@@ -19,38 +19,52 @@
       <button class="pressbutton" id="code">Cifrar</button>
       <button class="pressbutton" id="decode">Descifrar</button>
     </div>
-    <div><p></p></div>
-    <div></div>
-    <div></div>
   </header>
   <section>
+    <p class="textCipherCesar">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi nostrum dicta vitae. Assumenda commodi fugit repellendus,
+      quisquam repudiandae porro. Vero similique, exercitationem maxime nam tempora doloremque ratione rerum nesciunt dolorum?</p>
     <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank">
       <img id="image" src="https://tutorialesenlinea.es/uploads/posts/2015-04/1430401744_856px-caesar3.png" alt="Diagrama del método cifrado cesar"
         title="Método Cifrado Cesar">
     </a>
-    <h2>Herramienta para cifrar y descifrar textos con el método de cifrado César.</h2>
+    <br>
+    <br>
+    <br>
     <form>
-      <!-- Desplazamiento -->
-      <label for="displace">Número de desplazamiento:</label>
-      <input id="displace" type="number" value="1" maxlength="3" min="1">
-      <br>
-      <br>
+      <div class="moduleCipher">
+        <h2>Ingrese número de desplazamiento y texto a cifrar:</h2>
+        <!-- Desplazamiento -->
+        <label for="displace">Número de desplazamiento:</label>
+        <input id="displace" type="number" value="1" max="100" min="1">
+        <br>
+        <br>
 
-      <!-- Texto para encriptar  y desencriptar -->
-      <label for="cipher">Ingresar texto:</label>
-      <textarea id="cipher" type="text" placeholder="¡Hola, escribe aquí!"></textarea>
-      <button id="buttonEncode" type="button">CIFRAR</button>
-      <!-- Texto encriptado -->
-      <p id="encryptedText"></p>
-      <br>
-      <br>
+        <!-- Texto para encriptar  y desencriptar -->
+        <label for="cipher">Ingresar texto:</label>
+        <textarea id="cipher" type="text" placeholder="¡Hola, escribe aquí!"></textarea>
+        <button id="buttonEncode" type="button">CIFRAR</button>
+        
+        <!-- Texto encriptado -->
+        <p id="encryptedText">¡Texto cifrado!</p>
+        <br>
+        <br>
+      </div>
+      <div class="moduleDecipher">
+        <h2>Ingrese número de desplazamiento y texto a descifrar:</h2>
+        <!-- Desplazamiento -->
+        <label for="displace2">Número de desplazamiento:</label>
+        <input id="displace2" type="number" value="1" max="100" min="1">
+        <br>
+        <br>
 
-      <!-- Texto para desencriptar -->
-      <label for="decipher">Ingresar texto:</label>
-      <textarea id="decipher" type="text" placeholder="¡Hola, escribe aquí!"></textarea>
-      <button id="buttonDecode" type="button">DESCIFRAR</button>
-      <!-- Texto desencriptado -->
-      <p id="decryptedText"></p>
+        <!-- Texto para desencriptar -->
+        <label for="decipher">Ingresar texto:</label>
+        <textarea id="decipher" type="text" placeholder="¡Hola, escribe aquí!"></textarea>
+        <button id="buttonDecode" type="button">DESCIFRAR</button>
+
+        <!-- Texto desencriptado -->
+        <p id="decryptedText">¡Texto descifrado!</p>
+      </div>
     </form>
   </section>
   <script src="cipher.js"></script>
