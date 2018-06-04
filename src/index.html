@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <!-- Título y barra de navegacion -->
+  <!-- Título y barra de navegacion con tabs-->
   <header>
     <h1>Oculta tu mensaje con el Cifrado Cesar</h1>
     <div class="navigationBar">
@@ -21,35 +21,34 @@
     </div>
   </header>
   <section>
-    <p class="textCipherCesar">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi nostrum dicta vitae. Assumenda commodi fugit repellendus,
-      quisquam repudiandae porro. Vero similique, exercitationem maxime nam tempora doloremque ratione rerum nesciunt dolorum?</p>
-    <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank">
-      <img id="image" src="https://tutorialesenlinea.es/uploads/posts/2015-04/1430401744_856px-caesar3.png" alt="Diagrama del método cifrado cesar"
-        title="Método Cifrado Cesar">
-    </a>
-    <br>
-    <br>
-    <br>
-    <form>
-      <div class="moduleCipher">
+    <div class="module" id="module1" style="display:none">
+      <p class="textCipherCesar">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi nostrum dicta vitae. Assumenda commodi fugit repellendus,
+        quisquam repudiandae porro. Vero similique, exercitationem maxime nam tempora doloremque ratione rerum nesciunt dolorum?</p>
+      <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar" target="_blank">
+        <img id="image" src="https://tutorialesenlinea.es/uploads/posts/2015-04/1430401744_856px-caesar3.png" alt="Diagrama del método cifrado cesar"
+          title="Método Cifrado Cesar">
+      </a>
+    </div>
+    <form id="module2" style="display:none">
+      <div class="module" >
         <h2>Ingrese número de desplazamiento y texto a cifrar:</h2>
         <!-- Desplazamiento -->
         <label for="displace">Número de desplazamiento:</label>
         <input id="displace" type="number" value="1" max="100" min="1">
-        <br>
-        <br>
 
         <!-- Texto para encriptar  y desencriptar -->
         <label for="cipher">Ingresar texto:</label>
         <textarea id="cipher" type="text" placeholder="¡Hola, escribe aquí!"></textarea>
         <button id="buttonEncode" type="button">CIFRAR</button>
-        
+
         <!-- Texto encriptado -->
         <p id="encryptedText">¡Texto cifrado!</p>
         <br>
         <br>
       </div>
-      <div class="moduleDecipher">
+    </form>
+    <form id="module3" style="display:none">
+      <div class="module">
         <h2>Ingrese número de desplazamiento y texto a descifrar:</h2>
         <!-- Desplazamiento -->
         <label for="displace2">Número de desplazamiento:</label>

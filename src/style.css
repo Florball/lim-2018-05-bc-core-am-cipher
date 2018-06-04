@@ -46,7 +46,7 @@ h1 {
   background-color: #3f353596;
 }
 
-/* Parrafo de que es el cifrado Cesar */
+/* Parrafo de qué es el cifrado Cesar */
 .textCipherCesar {
   font-family: 'Raleway', sans-serif;
   font-size: 22px;
@@ -65,14 +65,22 @@ img {
   border-radius: 8px;
 }
 
-/* Cuadro de difrado */
-.moduleCipher {
+/* Cuadro de cifrado y descifrado */
+.module {
 background-color: rgba(248, 8, 128, 0.829);
 width: 50%;
 border: 1px solid rgba(248, 8, 128, 0.829);
 border-radius: 15px;
 padding: 5%;
 margin: auto;
+/* position: absolute;
+left: -1000%; // Desaparece los modulos */
+}
+
+/* Estilo para el boton activo */
+.module:active {
+position: relative;
+left: 0;
 }
 
 /* Subtitulos para indicar el ingreso de desplazamiento y texto para cifrar y descifrar */
@@ -108,16 +116,6 @@ label {
   text-align: center;
 }
 
-/* Cuadro de descifrado */
-.moduleDecipher {
-  background-color: rgba(248, 8, 128, 0.829);
-  width: 50%;
-  border: 1px solid rgba(248, 8, 128, 0.829);
-  border-radius: 15px;
-  padding: 5%;
-  margin: auto;
-  }
-
   /* Texto descifrado */
  #decryptedText {
   font-family: 'Raleway', sans-serif;
@@ -127,6 +125,15 @@ label {
   margin-top: 6%;
   text-align: center;
 }
+
+/* Aparecer y esaparecer */
+.aparecer{
+ display:block;
+}
+.desaparecer{
+  display: none;
+}
+
 
 /* Usando media query (medidas recomendadas) para responsive en moviles y tablets */
 @media (max-width:768px) {
