@@ -21,20 +21,16 @@ document.getElementById('cipherCesar').addEventListener('click', () => {
   document.getElementById('module1').style.display = 'block';
   document.getElementById('module2').style.display = 'none';
   document.getElementById('module3').style.display = 'none';
-
 });
 
 document.getElementById('code').addEventListener('click', () => {
   document.getElementById('module2').style.display = 'block';
   document.getElementById('module1').style.display = 'none';
   document.getElementById('module3').style.display = 'none';
-
 });
 
 document.getElementById('decode').addEventListener('click', () => {
   document.getElementById('module3').style.display = 'block';
   document.getElementById('module1').style.display = 'none';
   document.getElementById('module2').style.display = 'none';
-
 });
-
