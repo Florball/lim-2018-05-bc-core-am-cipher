@@ -25,7 +25,7 @@ window.cipher = {
       } else if (position == 32) { // Condicional, si es igual a 32 en codigo ascii
         decrypted += " "; // Es igual a espacio
       } else {
-        encryption += string[index]; //Retorna cualquier valor que no entra en las 2 primeras condicionales
+        decrypted += string[index]; //Retorna cualquier valor que no entra en las 2 primeras condicionales
       }
     }
     return (decrypted); // Retornando el valor
