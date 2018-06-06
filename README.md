@@ -2,19 +2,17 @@
 
 ## Pensado en un público tecnológico
 
-Interpretando las necesidades de un publico joven y tecnológico, un público que desea mantener la privacidad en sus conversaciones, analicé los objetivos de la existencia de esta página para sacar el máximo provecho a todas las posibilidades que Internet le pueda brindar al usuario de diario, ese usurio que usa aplicaciones de mensajería como whats'app, messenger, etc. Desarrollé y diseñé este proyecto a medida del usuario final, para cumplir con las necesidades de cada proyecto, buscando una óptima usabilidad para los usuarios finales.
+Interpretando las necesidades de un publico joven y tecnológico, un público que desea mantener la privacidad en sus conversaciones, analicé los objetivos de la existencia de esta página para sacar el máximo provecho a todas las posibilidades que Internet le pueda brindar al usuario de diario, ese usurio que usa aplicaciones de mensajería como whats'app, messenger,instagram, etc. Desarrollé y diseñé este proyecto a medida del usuario, para cumplir con las necesidades de cada uno de ellos, buscando una óptima usabilidad para los usuarios finales.
 
-* Los principales usuarios fueron amigos que usan aplicaciones de mensajeria por movil, tablet y laptop.
-* cuáles son los objetivos de estos usuarios en relación con el producto
-* cómo crees que el producto que estás creando les está resolviendo sus
-  problemas
+* Los principales usuarios son jovenes que usan aplicaciones de mensajeria por movil, tablet y laptop, usuarios que desean mantener su privacidad. 
+* El objetivo del usuario es mantener la seguridad de que sus mensajes seran privados.
+* La página es útil para los usuarios porque les permite mantener conversaciones con sus amigos o familiares con mensajes cifrados, eligiendo un número de desplazamiento para su cifrado(número de desplazamiento de las letras).
 
 ### UI
 
 La interfaz debe permitir al usuario:
 
-* elegir un `offset` indicando cuántas posiciones queremos que el cifrado
-  desplace cada caracter
+* elegir un `offset` indicando cuántas posiciones queremos que el cifrado desplace cada caracter
 * insertar un mensaje (texto) que queremos cifrar
 * ver el resultado del mensaje cifrado
 * insertar un mensaje (texto) a descifrar
